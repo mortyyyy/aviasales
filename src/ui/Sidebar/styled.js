@@ -12,6 +12,7 @@ export const SidebarTitleStyled = styled.div`
     font-size: 12px;
     text-align: center;
     padding: 20px;
+    padding-left: 0;
     font-weight: bold;
     text-transform: uppercase;
 `;
