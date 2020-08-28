@@ -1,8 +1,9 @@
 import React from "react";
+import 'regenerator-runtime/runtime'
 import ReactDOM from "react-dom";
-import { Provider } from 'react-redux';
+import {Provider} from 'react-redux';
 import store from './app/store';
-import { createGlobalStyle } from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 import TicketList from './features/TicketList'
 
 const GlobalStyle = createGlobalStyle`
@@ -14,9 +15,9 @@ const GlobalStyle = createGlobalStyle`
 let App = document.getElementById("app");
 
 ReactDOM.render(
-  <Provider store={store}>
-    <React.Fragment>
-      <GlobalStyle />
-      <TicketList />
-    </React.Fragment>
-  </Provider>, App);
+    <Provider store={store}>
+        <React.Fragment>
+            <GlobalStyle/>
+            <TicketList/>
+        </React.Fragment>
+    </Provider>, App);
